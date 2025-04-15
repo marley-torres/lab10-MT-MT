@@ -6,6 +6,30 @@ One function per operation, in order.
 """
 import math
 
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a
+
+def logarithm(a, b):
+    try:
+        val = math.log(b, a)
+        return val
+    except Exception:
+        raise ValueError
+
+def exp(a, b):
+    return a ** b
+
 def square_root(a):
     if a < 0:
         raise ValueError
@@ -17,30 +41,3 @@ def hypotenuse(a, b):
         return val
     except Exception as e:
         raise Exception(str(e))
-
-def add(a, b): 
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
-def divide(a,b):
-    if a == 0:
-        raise ZeroDivisionError
-    return b / a
-
-def logarithm(a, b):
-    try:
-        val = math.log(b, a)
-        return val
-    except Exception:
-        raise ValueError 
-
-def exponent(a, b):
-    return a ** b
-
-
-
