@@ -6,6 +6,18 @@ One function per operation, in order.
 """
 import math
 
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    try:
+        val = math.hypot(a, b)
+        return val
+    except Exception as e:
+        raise Exception(str(e))
+
 def add(a, b): 
     return a + b
 
