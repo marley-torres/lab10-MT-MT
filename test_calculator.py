@@ -1,9 +1,9 @@
-import unittest
-from calculator import *
-
 # https://github.com/marley-torres/lab10-MT-MT/tree/main
 # Partner 1: Marley Torres
 # Partner 2: Marley's second github account
+
+import unittest
+from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
